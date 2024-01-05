@@ -1,0 +1,46 @@
+.dropzone.dz-clickable {
+    max-height: 40vh;
+    max-width: 90vw!important;
+    overflow: auto;
+    display: flex;
+    border-radius: 10px;
+    background: #00000066;
+    border: dashed 3px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.dropzone.dz-clickable:hover {
+    background: #000000be;
+}
+.box {
+    overflow: auto;
+    padding: .5rem;
+    gap: 1rem;
+    display: flex;
+    border-radius: 10px;
+    background: #00000066;
+    border: dashed 3px;
+    cursor: pointer;
+    height: 30vh;
+    min-width: 400px;
+    max-width: 90vw;
+    flex-direction: column;
+    align-items: center;
+}
+.outer-container {
+    gap: 2rem;
+
+}
+.inner-box {
+    /* overflow: visible; */
+    padding: .5rem;
+    border-radius: 10px;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 2rem; */
+    /* width: 90%; */
+}

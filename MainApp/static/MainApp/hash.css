@@ -1,0 +1,30 @@
+#hash {
+    background: none;
+    border: solid 1px white;
+    border-radius: 10px;
+    min-height: 200px;
+    min-width: 200px;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: white;
+    font-family: monospace;
+}
+button{
+    background: none;
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: .5rem;
+    font-size: 1.4rem;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.403);
+}
+.container-hash{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2rem;
+}

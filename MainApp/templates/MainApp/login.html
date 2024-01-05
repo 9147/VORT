@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'MainApp/login.css' %}">
+<script src="{% static 'jquery-3.7.1.min.js' %}"></script>
+
+{% endblock head %}
+{% block body %}
+<div class="outer-container_login">
+<div class="container_login" id="container_login">
+    <h1>Login</h1>
+    {% csrf_token %}
+    <div class="inner-container_login">
+    <div class="username innermost-container_login">
+        <label for="username">Username:</label><input type="text" placeholder="Username" name="username" id="username">
+    </div>
+    <div class="pass innermost-container_login">
+        <label for="password">Password:</label><input type="password" placeholder="Password" name="password" id="password">
+    </div>
+    <div class="submit" onclick="login()"><button>Submit</button></div>
+</div>
+</div>
+</div>
+{% endblock body %}
+{% block script %}
+<script type="text/javascript" src="{% static 'MainApp/login.js' %}"></script>
+{% endblock script %}
